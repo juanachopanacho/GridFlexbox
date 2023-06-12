@@ -1,0 +1,48 @@
+#container{
+    display: grid;
+    grid-template-areas:'header header'
+                        'sidebar photos';
+}
+
+header{
+    /* background-color: aqua; */
+    grid-area: header;
+}
+
+#sidebar{
+    /* background-color: brown; */
+    grid-area: sidebar;
+
+}
+
+#photo-container{
+    /* background-color: coral; */
+    grid-area: photos;
+}
+
+@media only screen and (max-width: 600px){
+    #container{
+        display: grid;
+        grid-template-areas: 'header'
+                            'sidebar'
+                            'photos';
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #container{
+        display: grid;
+        grid-template-areas: 'header'
+                            'sidebar'
+                            'photos';
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    #container{
+        display: grid;
+        grid-template-areas: 'header header'
+                            'sidebar photos';
+    }
+}
